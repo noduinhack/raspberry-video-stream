@@ -83,7 +83,7 @@ class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
 os.system("pkill raspivid")
 
 
-with picamera.PiCamera(resolution='800x600', framerate=24) as camera:
+with picamera.PiCamera(resolution='700x337', framerate=24) as camera:
     output = StreamingOutput()
     #Uncomment the next line to change your Pi's Camera rotation (in degrees)
     #camera.rotation = 90
